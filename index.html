@@ -1,0 +1,37 @@
+<meta charset="utf-8">
+<!-- <script>
+	function writeunicode(min, max) {
+    for (let i = min; i < Array(max).length; i++) {
+        document.write(String.fromCharCode(i));
+    }
+}
+</script> -->
+
+<script>
+	s = 3
+	msg = prompt("Введите слово для шифрования:", "Люблю чай")
+	total = "Результат: "
+
+	for (let i of msg) {
+		let place = msg.charCodeAt(i)
+		let newPlace = place + s
+		total += String.fromCharCode(newPlace)
+		console.log(newPlace)
+	}
+	console.log(total)
+</script>
+
+<!-- <script>
+	for (let i of msg) {
+    	let place = eng.indexOf(i);
+    	console.log(i, 'place=', place);
+    	let new_place = place + shift;
+    	console.log(new_place);
+    if (eng.includes(i)) {
+      total += eng[new_place]
+    } else {
+      total += 1
+    }
+  }
+alert(total)
+</script> -->
